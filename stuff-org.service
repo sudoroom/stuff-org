@@ -1,0 +1,14 @@
+[Unit]
+Description=stuff-org.service
+After=network.target
+
+[Service]
+User=stuff
+Restart=always
+RestartSec=10
+ExecStart=/home/stuff/stuff-org/run.sh
+StandardOutput=/var/stuff-org.log
+StandardError=/var/stuff-org_error.log
+
+[Install]
+WantedBy=multi-user.target
