@@ -279,12 +279,12 @@
           </tr>
 
           <tr>
-            <td align="right" style="vertical-align:top;"><label for="cnotes">Notes</label></td>
+            <td align="right" style="vertical-align:top;"><label for="cnotes">Location</label></td>
             <td><textarea rows="{{.NotesRows}}" cols="50" name="notes" id="cnotes">{{.Notes}}</textarea></td>
           </tr>
 
           <tr>
-            <td align="right"><label for="dsheet">Datasheet</label></td>
+            <td align="right"><label for="dsheet">URL</label></td>
             <td><input style="text-size:smaller;" type="text" name="datasheet" size="50" id="dsheet" value="{{.Datasheet_url}}">
             {{if ne .Datasheet_url ""}}<a href="{{.Datasheet_url}}" class="v">-&gt;link</a>{{end}}
           </td>
